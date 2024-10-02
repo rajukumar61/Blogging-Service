@@ -79,8 +79,8 @@ To run the entire stack locally using Docker Compose, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-repo/blogging-service.git
-    cd blogging-service
+    https://github.com/rajukumar61/Blogging-Service.git
+    cd Blogging-Service
     ```
 
 2. Start the services using Docker Compose:
