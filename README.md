@@ -1,7 +1,3 @@
-# Blogging-Service
-
-
-```markdown
 # Blogging Service
 
 This project is a microservice-based blogging platform that allows users to submit blog entries and search for them. It leverages **Docker**, **RabbitMQ**, **Elasticsearch**, and **Kubernetes** for containerization and orchestration, and ensures scalability and asynchronous operations.
