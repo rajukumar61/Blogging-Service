@@ -1,0 +1,47 @@
+# Service for the Blog API
+apiVersion: v1
+kind: Service
+metadata:
+  name: blog-api-service
+  labels:
+    app: blog-api
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80          # Expose the service on port 80
+      targetPort: 5000   # Internally forwards to the Flask app running on port 5000
+  selector:
+    app: blog-api
+
+---
+# Service for RabbitMQ
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq-service
+  labels:
+    app: rabbitmq
+spec:
+  type: ClusterIP
+  ports:
+    - name: amqp
+      port: 5672         # AMQP port for messaging
+    - name: management
+      port: 15672        # Management console port
+  selector:
+    app: rabbitmq
+
+---
+# Service for Elasticsearch
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch-service
+  labels:
+    app: elasticsearch
+spec:
+  type: ClusterIP
+  ports:
+    - port: 9200         # Port for Elasticsearch REST API
+  selector:
+    app: elasticsearch

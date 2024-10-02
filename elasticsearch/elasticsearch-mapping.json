@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "properties": {
+      "blog_title": {
+        "type": "text"
+      },
+      "blog_text": {
+        "type": "text"
+      },
+      "user_id": {
+        "type": "keyword"
+      }
+    }
+  }
+}
