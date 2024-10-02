@@ -199,12 +199,3 @@ You can test the service using `curl` commands or any API testing tool (Postman,
 ## Conclusion
 
 This project provides a fully functional, scalable, and containerized blogging platform that supports asynchronous blog submission, indexing, and full-text search. It can be deployed locally using Docker Compose or orchestrated using Kubernetes for a production-ready setup.
-```
-
----
-
-### Key Sections to Modify:
-1. **Clone URL**: Change the clone URL to your actual repository URL.
-2. **Future Improvements**: If you add more features or improvements, you can update that section to reflect the changes.
-
-Let me know if you need any further modifications!
